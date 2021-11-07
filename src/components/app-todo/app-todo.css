@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+  /* Como o elemento deverá tratar o padding, colocando border box dizemos que ele irá somar o padding ao height e width do elemento */
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+/* CSS DO BLOCO E INPUT */
+
+.input {
+  display: grid;
+  grid-template: 1fr / 9fr 1fr;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #444;
+}
+
+.input .input--descricao {
+  display: block;
+}
+
+.input .input--botao {
+  align-self: center;
+}
+
+/* CSS DO BLOCO DE */
+
+.tarefa {
+  display: grid;
+  grid-template: 1fr / 9fr 1fr;
+}
+
+.tarefa .tarefa--botao {
+  align-self: center;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #888;
+}
+
+/* Cores */
+.success {
+  background-color: #4caf50;
+}
+
+.warning {
+  background-color: #ffc107;
+}
+
+.danger {
+  background-color: #f44336;
+}
